@@ -17,6 +17,6 @@
   }
 }
 
-.zest-animate > * {
+.zest-click > * {
   animation: beacon 0.3s linear;
 }
