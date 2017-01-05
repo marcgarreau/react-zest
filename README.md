@@ -1,4 +1,6 @@
 # React Zest
+![zest-logo](https://s3.amazonaws.com/react-zest/zest.png)
+
  _a lightweight wrapper for adding micro-animations to React components_
 
 ## Up & Running
