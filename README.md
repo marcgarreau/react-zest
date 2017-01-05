@@ -22,4 +22,6 @@ const SomeComponent = (props) => {
 export default SomeComponent;
 ```
 
+Note that the wrapped element must have a `display` value of `inline-block` or `block` to have all animations applied.
+
 ## Contributing
