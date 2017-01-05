@@ -1,0 +1,33 @@
+{
+  "name": "react-zest",
+  "version": "0.0.1",
+  "description": "a lightweight wrapper for adding micro-animations to React components",
+  "main": "build/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel lib -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCognizantFoundry/react-zest.git"
+  },
+  "author": "",
+  "contributors": [
+    "Alan Smith <a.bax.smith@gmail.com> (https://alanbsmith.io)",
+    "Marc Garreau <marcdgarreau@gmail.com> (http://marcgarreau.com)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheCognizantFoundry/react-zest/issues"
+  },
+  "homepage": "https://github.com/TheCognizantFoundry/react-zest#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  }
+}
