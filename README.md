@@ -27,3 +27,6 @@ export default SomeComponent;
 Note that the wrapped element must have a `display` value of `inline-block` or `block` to have all animations applied.
 
 ## Contributing
+
+#### Testing
+To run the test suite: `npm test`
