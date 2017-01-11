@@ -28,5 +28,8 @@ Note that the wrapped element must have a `display` value of `inline-block` or `
 
 ## Contributing
 
-#### Testing
+### Testing
+
 To run the test suite: `npm test`
+
+To run the linter: `npm run lint`
