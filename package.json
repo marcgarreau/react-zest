@@ -4,7 +4,7 @@
   "description": "a lightweight wrapper for adding micro-animations to React components",
   "main": "build/index.js",
   "scripts": {
-    "prepublish": "npm test && npm run build",
+    "prepublish": "npm run build",
     "build": "babel lib -d build",
     "lint": "eslint lib/**; exit 0",
     "test": "mocha --compilers js:babel-core/register ./test/**/*.spec.js --require ignore-styles"
