@@ -13,7 +13,7 @@ npm install --save react-zest
 
 Import the `Zest` component and wrap the element you'd like to animate.
 
-The `Zest` wrapper can accept an `animationTrigger` prop with values `click` or `hover`. Currently, one animation is available that resembles a ripple around the wrapped element.
+The `Zest` wrapper can accept an `animationTrigger` prop with values `click` (default) or `hover`. Currently, one animation is available that resembles a ripple around the wrapped element.
 
 ```
 import React from 'react';
