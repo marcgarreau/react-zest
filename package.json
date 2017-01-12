@@ -4,9 +4,10 @@
   "description": "a lightweight wrapper for adding micro-animations to React components",
   "main": "build/index.js",
   "scripts": {
-    "prepublish": "npm test && npm run build",
+    "prepublish": "npm run lint && npm test && npm run build",
     "build": "babel lib -d build",
     "lint": "eslint lib/**; exit 0",
+    "lint:watch": "esw -w lib/**",
     "test": "mocha --compilers js:babel-core/register ./test/**/*.spec.js --require ignore-styles"
   },
   "repository": {
@@ -35,6 +36,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
+    "eslint-watch": "^2.1.14",
     "expect": "^1.20.2",
     "ignore-styles": "^5.0.1",
     "mocha": "^3.2.0",
