@@ -8,7 +8,8 @@
     "build": "babel lib -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
-    "test": "mocha --compilers js:babel-core/register ./test/**/*.spec.js --require ignore-styles"
+    "test": "mocha --compilers js:babel-core/register ./test/**/*.spec.js --require ignore-styles",
+    "test:watch": "npm test -- --watch"
   },
   "repository": {
     "type": "git",
