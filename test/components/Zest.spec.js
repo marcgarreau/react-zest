@@ -1,19 +1,27 @@
 import React from 'react';
 import expect from 'expect';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import Zest from '../../lib/components/Zest';
+import ZestClick from '../../lib/components/triggerTypes/ZestClick';
+import ZestHover from '../../lib/components/triggerTypes/ZestHover';
 
 
 describe('Component: Zest', () => {
-  it('is initialized with the appropriate classNames', () => {
+  it('renders the ZestClick component by default', () => {
     const wrapper = shallow(<Zest />);
-    expect(wrapper.find('.react-zest').length).toEqual(1);
+    expect(wrapper.find(ZestClick).length).toEqual(1);
+    expect(wrapper.find(ZestHover).length).toEqual(0);
   });
 
-  it('is applies the appropriate classNames onClick', () => {
-    const wrapper = shallow(<Zest />);
-    wrapper.find('.react-zest').simulate('click');
-    expect(wrapper.state().classNames).toEqual('react-zest zest-click');
-    expect((wrapper).hasClass('zest-click')).toEqual(true);
+  it('conditionally renders the ZestClick component', () => {
+    const wrapper = shallow(<Zest animationTrigger="click" />);
+    expect(wrapper.find(ZestClick).length).toEqual(1);
+    expect(wrapper.find(ZestHover).length).toEqual(0);
+  });
+
+  it('conditionally renders the ZestHover component', () => {
+    const wrapper = shallow(<Zest animationTrigger="hover" />);
+    expect(wrapper.find(ZestHover).length).toEqual(1);
+    expect(wrapper.find(ZestClick).length).toEqual(0);
   });
 });
