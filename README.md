@@ -9,16 +9,23 @@ _a lightweight wrapper for adding micro-animations to React components_
 npm install --save react-zest
 ```
 
+or
+
+```
+yarn add react-zest
+```
+
 ## Usage
 
 Import the `Zest` component and wrap the element you'd like to animate.
 
 A couple props can be passed to the `Zest` component to configure the animation:
 
-| Prop               | Values                     |
-|--------------------|----------------------------|
-| `animationName`    | `beacon`, `wiggle`         |
-| `animationTrigger` | `click` (default), `hover` |
+| Prop                           | Values                                          |
+|--------------------------------|-------------------------------------------------|
+| `animationTrigger`             | `click` (default), `hover`                      |
+| `animationType`                | `beacon`, `wiggle`                              |
+| `animationDuration` (optional) | i.e. `300ms` or `1s`. Defaults are recommended. |
 
 ### Example
 
