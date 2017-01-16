@@ -23,8 +23,8 @@ A couple props can be passed to the `Zest` component to configure the animation:
 
 | Prop                           | Values                                                   |
 |--------------------------------|----------------------------------------------------------|
+| `animationName`                | `beacon`, `wiggle`                                       |
 | `animationTrigger`             | `click` (default), `hover`                               |
-| `animationType`                | `beacon`, `wiggle`                                       |
 | `animationDuration` (optional) | # of milliseconds, i.e. `300`. Defaults are recommended. |
 
 ### Example
