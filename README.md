@@ -23,7 +23,7 @@ A couple props can be passed to the `Zest` component to configure the animation:
 
 | Prop                           | Values                                                   |
 |--------------------------------|----------------------------------------------------------|
-| `animationName`                | `beacon`, `wiggle`                                       |
+| `animationName`                | `beacon`, 'error', `wiggle`                              |
 | `animationTrigger`             | `click` (default), `hover`                               |
 | `animationDuration` (optional) | # of milliseconds, i.e. `300`. Defaults are recommended. |
 
@@ -48,7 +48,11 @@ const SomeComponent = props => {
 export default SomeComponent;
 ```
 
-Note that the wrapped element must have a `display` value of `inline-block` or `block` to have all animations applied.
+### Notes
+
+* The wrapped element must have a `display` value of `inline-block` or `block` to have all animations applied.
+
+* The 'error' animation is intended for input fields and alters the `border-color` and text color to red. To best view this effect, you'll want to add the prop `outline: none` to your input field.
 
 ## Contributing
 
