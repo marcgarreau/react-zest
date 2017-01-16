@@ -21,11 +21,11 @@ Import the `Zest` component and wrap the element you'd like to animate.
 
 A couple props can be passed to the `Zest` component to configure the animation:
 
-| Prop                           | Values                                          |
-|--------------------------------|-------------------------------------------------|
-| `animationTrigger`             | `click` (default), `hover`                      |
-| `animationType`                | `beacon`, `wiggle`                              |
-| `animationDuration` (optional) | i.e. `300ms` or `1s`. Defaults are recommended. |
+| Prop                           | Values                                                   |
+|--------------------------------|----------------------------------------------------------|
+| `animationTrigger`             | `click` (default), `hover`                               |
+| `animationType`                | `beacon`, `wiggle`                                       |
+| `animationDuration` (optional) | # of milliseconds, i.e. `300`. Defaults are recommended. |
 
 ### Example
 
@@ -36,6 +36,7 @@ import Zest from 'react-zest';
 const SomeComponent = props => {
   return (
     <Zest
+      animationDuration={700}
       animationName="wiggle"
       animationTrigger="hover"
     >
