@@ -1,7 +1,7 @@
 # React Zest
 ![zest-logo](https://s3.amazonaws.com/react-zest/zest.png)
 
- _a lightweight wrapper for adding micro-animations to React components_
+_a lightweight wrapper for adding micro-animations to React components_
 
 ## Installation
 
@@ -13,15 +13,25 @@ npm install --save react-zest
 
 Import the `Zest` component and wrap the element you'd like to animate.
 
-The `Zest` wrapper can accept an `animationTrigger` prop with values `click` (default) or `hover`. Currently, one animation is available that resembles a ripple around the wrapped element.
+A couple props can be passed to the `Zest` component to configure the animation:
+
+| Prop               | Values                     |
+|--------------------|----------------------------|
+| `animationTrigger` | `click` (default), `hover` |
+| `animationType`    | `beacon`, `wiggle`         |
+
+### Example
 
 ```
 import React from 'react';
 import Zest from 'react-zest';
 
-const SomeComponent = (props) => {
+const SomeComponent = props => {
   return (
-    <Zest animationTrigger="hover">
+    <Zest
+      animationTrigger="hover"
+      animationType="wiggle"
+    >
       <button>Click here!</button>
     </Zest>
   );
@@ -36,7 +46,7 @@ Note that the wrapped element must have a `display` value of `inline-block` or `
 
 To contribute:
 
-1. React out/file an issue if unsure changes are desired.
+1. Reach out/file an issue if unsure changes are desired.
 1. Fork it.
 1. Create your feature branch (`git checkout -b my-new-feature`).
 1. Add your changes to the `lib` or `css` directories, along with associated tests.
