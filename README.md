@@ -17,8 +17,8 @@ A couple props can be passed to the `Zest` component to configure the animation:
 
 | Prop               | Values                     |
 |--------------------|----------------------------|
+| `animationName`    | `beacon`, `wiggle`         |
 | `animationTrigger` | `click` (default), `hover` |
-| `animationType`    | `beacon`, `wiggle`         |
 
 ### Example
 
@@ -29,8 +29,8 @@ import Zest from 'react-zest';
 const SomeComponent = props => {
   return (
     <Zest
+      animationName="wiggle"
       animationTrigger="hover"
-      animationType="wiggle"
     >
       <button>Click here!</button>
     </Zest>
