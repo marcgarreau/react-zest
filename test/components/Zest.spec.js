@@ -8,20 +8,24 @@ import ZestHover from '../../lib/components/triggerTypes/ZestHover';
 
 describe('Component: Zest', () => {
   it('renders the ZestClick component by default', () => {
-    const wrapper = shallow(<Zest />);
+    const wrapper = shallow(<Zest animationName="wiggle" />);
     expect(wrapper.find(ZestClick).length).toEqual(1);
     expect(wrapper.find(ZestHover).length).toEqual(0);
   });
 
   it('conditionally renders the ZestClick component', () => {
-    const wrapper = shallow(<Zest animationTrigger="click" />);
+    const wrapper = shallow(<Zest animationName="wiggle" animationTrigger="click" />);
     expect(wrapper.find(ZestClick).length).toEqual(1);
     expect(wrapper.find(ZestHover).length).toEqual(0);
   });
 
-  it('conditionally renders the ZestHover component', () => {
-    const wrapper = shallow(<Zest animationTrigger="hover" />);
-    expect(wrapper.find(ZestHover).length).toEqual(1);
-    expect(wrapper.find(ZestClick).length).toEqual(0);
+  it('allows users to specify animation duration', () => {
+    const wrapper = shallow(<Zest animationName="wiggle" animationTrigger="click" animationDuration={300} />);
+    expect(wrapper.find(ZestClick).props().animationDuration).toEqual(300);
+  });
+
+  it('uses the default duration if one is not specified', () => {
+    const wrapper = shallow(<Zest animationName="wiggle" animationTrigger="click" />);
+    expect(wrapper.find(ZestClick).props().animationDuration).toEqual(1000);
   });
 });

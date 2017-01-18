@@ -96,8 +96,6 @@
 
 @keyframes error {
   0% {
-    color: red;
-    border-color: red;
     transform: translateX(2px);
   }
   20% {
@@ -113,16 +111,12 @@
     transform: translateX(2px);
   }
   100% {
-    color: red;
-    border-color: red;
     transform: translateX(0px);
   }
 }
 
 @-webkit-keyframes error {
   0% {
-    color: #C33917;
-    border-color: #C33917;
     transform: translateX(2px);
   }
   20% {
@@ -138,8 +132,6 @@
     transform: translateX(2px);
   }
   100% {
-    color: #C33917;
-    border-color: #C33917;
     transform: translateX(0px);
   }
 }

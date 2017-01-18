@@ -8,7 +8,7 @@ import ZestClick from '../../lib/components/triggerTypes/ZestClick';
 describe('Component: ZestClick', () => {
   it('toggles animation on click', () => {
     const spy = expect.createSpy();
-    const wrapper = mount(<ZestClick toggleAnimation={spy} />);
+    const wrapper = mount(<ZestClick animationName="wiggle" toggleAnimation={spy} />);
     wrapper.find(ZestClick).simulate('click');
     expect(spy).toHaveBeenCalled();
   });

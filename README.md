@@ -21,11 +21,22 @@ Import the `Zest` component and wrap the element you'd like to animate.
 
 A couple props can be passed to the `Zest` component to configure the animation:
 
+### General Props
+
 | Prop                           | Values                                                   |
 |--------------------------------|----------------------------------------------------------|
-| `animationName`                | `beacon`, 'error', `wiggle`                              |
+| `animationName`                | `beacon`, `error`, `wiggle`                              |
 | `animationTrigger`             | `click` (default), `hover`                               |
 | `animationDuration` (optional) | # of milliseconds, i.e. `300`. Defaults are recommended. |
+
+### Animation-Specific Defaults
+
+| Animation Name | Default Duration    | Custom Default Properties                                             |
+|----------------|---------------------|-----------------------------------------------------------------------|
+| `beacon`       | 300 (ms)  | n/a                                                                             |
+| `error`        | 300 (ms)  | `color: '#C33917'`<br>`borderColor: '#C33917'` (dark red)</br>_(`borderColor` will default to `color` or '#C33917' if not specified)_ |
+| `wiggle`       | 1000 (ms) | n/a                                                                             |
+
 
 ### Example
 
