@@ -3,13 +3,14 @@ import expect from 'expect';
 import { shallow } from 'enzyme';
 import Zest from '../../lib/components/Zest';
 import ZestClick from '../../lib/components/triggerTypes/ZestClick';
+import ZestCustom from '../../lib/components/triggerTypes/ZestCustom';
 import ZestHover from '../../lib/components/triggerTypes/ZestHover';
 
 
 describe('Component: Zest', () => {
-  it('renders the ZestClick component by default', () => {
+  it('renders the ZestCustom component by default', () => {
     const wrapper = shallow(<Zest animationName="wiggle" />);
-    expect(wrapper.find(ZestClick).length).toEqual(1);
+    expect(wrapper.find(ZestCustom).length).toEqual(1);
     expect(wrapper.find(ZestHover).length).toEqual(0);
   });
 

@@ -135,3 +135,49 @@
     transform: translateX(0px);
   }
 }
+
+@keyframes error-glow {
+  20% {
+    -webkit-box-shadow: 0 0 7px #C33917;
+    -moz-box-shadow: 0 0 7px #C33917;
+    box-shadow: 0 0 7px #C33917;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 2px #C33917;
+    -moz-box-shadow: 0 0 2px #C33917;
+    box-shadow: 0 0 2px #C33917;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 7px #C33917;
+    -moz-box-shadow: 0 0 7px #C33917;
+    box-shadow: 0 0 7px #C33917;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 2px #C33917;
+    -moz-box-shadow: 0 0 2px #C33917;
+    box-shadow: 0 0 2px #C33917;
+  }
+}
+
+@-webkit-keyframes error-glow {
+  20% {
+    -webkit-box-shadow: 0 0 7px #C33917;
+    -moz-box-shadow: 0 0 7px #C33917;
+    box-shadow: 0 0 7px #C33917;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 2px #C33917;
+    -moz-box-shadow: 0 0 2px #C33917;
+    box-shadow: 0 0 2px #C33917;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 7px #C33917;
+    -moz-box-shadow: 0 0 7px #C33917;
+    box-shadow: 0 0 7px #C33917;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 2px #C33917;
+    -moz-box-shadow: 0 0 2px #C33917;
+    box-shadow: 0 0 2px #C33917;
+  }
+}
