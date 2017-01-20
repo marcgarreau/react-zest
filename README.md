@@ -3,6 +3,9 @@
 
 _a lightweight wrapper for adding micro-animations to React components_
 
+## View the Demo
+A small demo is [here](https://zest-demo.herokuapp.com).
+
 ## Installation
 
 ```
