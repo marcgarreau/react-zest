@@ -26,13 +26,13 @@ describe('Component: Zest', () => {
     expect(wrapper.find(ZestClick).length).toEqual(0);
   });
 
-  it('allows users to specify animation duration', () => {
-    const wrapper = shallow(<Zest animationName="wiggle" animationTrigger="click" animationDuration={300} />);
-    expect(wrapper.find(ZestClick).props().animationDuration).toEqual(300);
-  });
-
   it('uses the default duration if one is not specified', () => {
     const wrapper = shallow(<Zest animationName="wiggle" animationTrigger="click" />);
     expect(wrapper.find(ZestClick).props().animationDuration).toEqual(1000);
+  });
+
+  it('allows users to specify animation duration', () => {
+    const wrapper = shallow(<Zest animationName="wiggle" animationTrigger="click" animationDuration={300} />);
+    expect(wrapper.find(ZestClick).props().animationDuration).toEqual(300);
   });
 });
