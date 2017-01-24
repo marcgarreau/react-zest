@@ -110,6 +110,7 @@ export default SomeComponent;
 * The wrapped element must have a `display` value of `inline-block` or `block` to have all animations applied.
 
 ## Contributing
+Contributors are expected to follow our Code of Conduct guidelines listed [here](CODE_OF_CONDUCT.md).
 
 To contribute:
 
