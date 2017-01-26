@@ -128,5 +128,3 @@ To contribute:
 To run the test suite: `npm test`
 
 To run the linter: `npm run lint`
-
-Still in a live talk!
